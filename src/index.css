@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+:root {
+  --darkBlue: #0d1422;
+  --lightBlue: #7aa5f3;
+  --greyBlue: #7aa5f329;
+  --lightGrey: #f2f2f2;
+  --grey: #929292;
+  --white: #ffffffc2;
+  --black: #1D1D1D;
+  --red: #dc3545;
+  --green: #28a745;
+
+  --textPrimary: 1.5rem;
+  --textSecondary: 1.2rem;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--darkBlue);
+  padding: 20px 5%;
+  max-width: 1600px;
+  margin: auto;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+}
+
+.error {
+  font-size: var(--textPrimary);
+  color: var(--red);
+  text-align: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 7px 25px;
+}
+input:focus {
+  outline: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --textPrimary: 1.3rem;
+    --textSecondary: 1.1rem;
+  }
+}
